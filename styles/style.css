@@ -1,0 +1,257 @@
+main {
+  display: flex;
+  width: 100%;
+}
+
+.headline-imgs {
+  position: relative;
+}
+
+.logo-img {
+  height: 120px !important;
+  width: 120px !important;
+  border-radius: 50%;
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -10px 10px 5px var(--basic-color);
+}
+
+.stars p {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.stars p img {
+  height: 20px !important; 
+  width: 20px !important;
+}
+
+.dishes-wrapper {
+  background-color: bisque;
+  min-height: 100vh;
+  width: calc(100% - 300px);
+}
+
+.dishes-wrapper section img:first-child {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 80px;
+  color:rgb(231, 101, 14);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  gap: 20px;
+  background-color: grey;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+nav button {
+  margin-right: 40px;
+  border: none;
+  padding: 10px 20px;
+  background-color: grey;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+@media (hover: hover) and (pointer: fine){
+  nav button:hover {
+    color: var(--basic-color);
+    transform: scale(1.3);
+  }
+}
+
+.dishes-wrapper section img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dish {
+  position: relative;
+  border: 1px solid var(--basic-color);
+  margin: 10px 10px;
+  padding-bottom: 10px;
+}
+
+.dish p {
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-right: 40px;
+  text-wrap: pretty;
+}
+
+.add-span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--basic-color);
+  border: 1px solid var(--basic-color);
+  border-right: none;
+  border-top: none;
+  padding-left: 6px;
+  padding-right: 6px;
+  cursor: pointer;
+}
+
+.dish-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dish-price {
+  color: var(--basic-color);
+  font-weight: 600;
+}
+
+.sidebar {
+  position: sticky;
+  top: 100px;
+  width: 300px;
+  height: 100%;
+  flex: 1;
+  background-color: var(--sidebar-color);
+  overflow-x: hidden;
+  text-align: center;
+  padding-top: 10px;
+  z-index: 300;
+  color: black;
+}
+
+.sidebar hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar h4 {
+  text-align: left;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.sidebar p {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar p img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.cart-invoice p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+
+.cart-invoice button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--basic-color);
+}
+
+@media (hover: hover) and (pointer: fine){
+  .cart-invoice button:hover {
+    transform: scale(1.05);
+  }
+}
+
+.cart-invoice a {
+  color: white;
+  font-weight: 600;
+}
+
+.dnone {
+  display: none;
+}
+
+.cart-overlay {
+  text-align: center;
+  position: absolute;
+  right: -100%;
+}
+
+.cart-overlay h2 {
+  font-size: 32px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.cart-overlay h4 {
+  padding-left: 20px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.cart-overlay img {
+  height: 32px;
+  cursor: pointer;
+}
+
+.cart-overlay p {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.overlay-cart {
+  padding-bottom: 10px;
+}
+
+.cart-overlay button {
+  margin-top: 40px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--basic-color);
+}
+
+@media (hover: hover) and (pointer: fine){
+  .cart-overlay button:hover {
+    transform: scale(1.05);
+  }
+}
+
+.cart-overlay button a {
+  color: white;
+  font-weight: 600;
+}
+
+.trennung {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

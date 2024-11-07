@@ -1,0 +1,39 @@
+:root {
+  --headerheight: 100px;
+  --footerheight: 100px;
+  --basic-color: #FF8000;
+  --sidebar-color: #795B85;
+  }
+  
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: var(--headerheight);
+  background-color: var(--basic-color);
+  z-index: 100;
+}
+
+header img {
+  height: 60%;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+header span {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 28px;
+  color: rgb(5, 102, 5);
+  background-color: rgb(226, 218, 218);
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.cart-icon {
+  padding-right: 60px;
+  cursor: pointer;
+}
